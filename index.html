@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Социальная сеть</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Форма регистрации -->
+  <h2>Регистрация</h2>
+  <form id="registrationForm">
+    <label for="regName">Имя:</label>
+    <input type="text" id="regName" required><br>
+    <label for="regPassword">Пароль:</label>
+    <input type="password" id="regPassword" required><br>
+    <label for="regAge">Возраст:</label>
+    <input type="number" id="regAge" required><br>
+    <button type="submit">Зарегистрироваться</button>
+  </form>
+
+  <!-- Форма авторизации -->
+  <h2>Авторизация</h2>
+  <form id="loginForm">
+    <label for="loginName">Имя:</label>
+    <input type="text" id="loginName" required><br>
+    <label for="loginPassword">Пароль:</label>
+    <input type="password" id="loginPassword" required><br>
+    <button type="submit">Войти</button>
+  </form>
+
+  <!-- Форма отправки сообщения -->
+  <h2>Отправка сообщений</h2>
+  <form id="sendMessageForm">
+    <label for="receiverName">Получатель:</label>
+    <input type="text" id="receiverName" required><br>
+    <label for="messageContent">Сообщение:</label>
+    <textarea id="messageContent" required></textarea><br>
+    <button type="submit">Отправить</button>
+  </form>
+
+  <!-- Форма удаления аккаунта -->
+  <h2>Удаление пользователя</h2>
+  <form id="deleteAccountForm">
+    <label for="deletePassword">Пароль:</label>
+    <input type="password" id="deletePassword" required><br>
+    <button type="submit">Удалить пользователя</button>
+  </form>
+
+  <!-- Отображение сообщений -->
+  <h2>Сообщения</h2>
+  <div id="messagesContainer"></div>
+
+  <!-- Отображение постов -->
+  <h2>Посты</h2>
+  <div id="postsContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
